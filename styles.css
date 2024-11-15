@@ -1,21 +1,21 @@
-/* Basic styling for readability, only applied if CSS is supported */
+/* Very Basic CSS */
 body {
     font-family: sans-serif, monospace;
-    font-size: 1.2em; /* Slightly larger font for readability */
+    font-size: 1.2em;
     line-height: 1.6;
     padding: 10px;
 }
 
 h1 {
-    font-size: 1.5em; /* Larger heading */
+    font-size: 1.5em; 
 }
 
 p {
-    font-size: 1em; /* Standard paragraph size */
+    font-size: 1em;
 }
 
 a {
-    color: #0066cc; /* Standard link color */
+    color: #0066cc; 
     text-decoration: none;
 }
 
