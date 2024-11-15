@@ -13,6 +13,13 @@ body {
   color: #000000;
 }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+  }
+}
+
 /* Very Small Screens and Minimal Displays */
 @media (max-width: 2em) { /* 32px */
   body {
