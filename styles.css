@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: 'Inconsolata', Courier, 'Courier New', 'Lucida Console', 'Liberation Mono', 'Nimbus Mono L', 'Andale Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Monaco, Consolas, 'Menlo', 'SF Mono', 'Hack', monospace;
+  font-family: 'Inconsolata', 'Lucida Console', 'Liberation Mono', 'Nimbus Mono L', 'Andale Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Monaco, Consolas, 'Menlo', 'SF Mono', 'Hack', monospace;
   font-size: 1rem; /* 16px */
   max-width: 44rem; /* 16px × 44 characters = 704px */
   line-height: 1.6;
