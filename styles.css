@@ -79,6 +79,12 @@ button:focus, a:focus {
   }
 }
 
+@media (prefers-reduced-data: reduce) {
+  .background-video {
+    display: none;
+  }
+}
+
 
 /* Very Small Screens and Minimal Displays */
 @media (max-width: 2em) { /* 32px */
