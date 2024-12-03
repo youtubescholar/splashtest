@@ -72,6 +72,15 @@ button:focus, a:focus {
   }
 }
 
+/* === Printing === */
+@media print {
+  body {
+    font-size: 12pt;
+    color: black;
+    background: none;
+  }
+}
+
 /* === Reduced Data === */
 @media (prefers-reduced-data: reduce) {
   img, video {
