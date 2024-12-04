@@ -24,13 +24,6 @@ body {
     color: #ffffff; /* Light text */
   }
 
-  button, a {
-    border-color: #ffffff; /* High-contrast borders */
-  }
-
-  button:focus, a:focus {
-    outline: 2px dashed #ffffff;
-  }
 }
 
 @media (prefers-color-scheme: light) {
