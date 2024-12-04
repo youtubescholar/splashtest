@@ -15,23 +15,7 @@ body {
   text-align: center; /* Centers content for splash page */
 }
 
-/* === Accessibility Enhancements === */
-button, a {
-  font-family: inherit; /* Consistent typography */
-  font-size: 1rem;
-  padding: 0.5rem 1rem; /* Touch-friendly targets */
-  border: 2px solid #000000; /* Visible borders */
-  border-radius: 0.25rem; /* Slightly rounded corners */
-  background: none;
-  color: inherit;
-  text-decoration: none;
-  cursor: pointer;
-}
 
-button:focus, a:focus {
-  outline: 2px dashed #005fcc; /* Clear focus indicator */
-  outline-offset: 2px;
-}
 
 /* === Dark and Light Mode === */
 @media (prefers-color-scheme: dark) {
