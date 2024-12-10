@@ -1,1 +1,86 @@
-menon
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <title>Welcome to Tai Chi For Everyone</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Disclaimer Modal -->
+    <section id="disclaimerModal" role="dialog" aria-labelledby="disclaimerHeading" aria-modal="true">
+        <div class="modal-content" role="document">
+            <h2 id="disclaimerHeading">Disclaimer</h2>
+            <p>Please read carefully before proceeding to the site.</p>
+            <p>
+                This site is for general information only and is not professional advice. By using this site, you agree to our 
+                <a href="terms_of_service.html" target="_blank" rel="noopener noreferrer">Terms of Service</a> and 
+                <a href="privacy_policy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.
+            </p>
+            <div class="modal-footer">
+                <button onclick="acceptDisclaimer()">Accept</button>
+                <button onclick="declineDisclaimer()" style="background-color: #f44336;">Decline</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <header>
+        <h1>Welcome to Tai Chi For Everyone</h1>
+    </header>
+
+    <main>
+        <!-- Compatibility Options -->
+        <section>
+            <h2>Choose the Best Option for Your System</h2>
+            <ul>
+                <li><a href="withjava.html">Modern Site with JavaScript</a></li>
+                <li><a href="modern.html">Modern Site without JavaScript</a></li>
+                <li><a href="legacy.html">Legacy Site (1997–2008)</a></li>
+                <li><a href="txtindex.html">Direct Text File Index</a></li>
+            </ul>
+            <p>If the links do not display correctly, you can access content here: 
+                <a href="text-index.html">Direct Text File Index</a>.
+            </p>
+        </section>
+
+        <!-- Main Links -->
+        <section>
+            <h2>Explore</h2>
+            <div class="button-container">
+                <a href="homepage.html" aria-label="Go to Homepage">
+                    <img src="images/goto-homepage.png" alt="Go to Homepage">
+                </a>
+            </div>
+            <div class="button-container">
+                <a href="support.html" aria-label="Support Us">
+                    <img src="images/support-button.png" alt="Support Us">
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact us at <a href="mailto:taichiman@tutamail.com">taichiman@tutamail.com</a></p>
+        <p>&copy; 2022 Tai Chi For Everyone</p>
+        <p>
+            <a href="privacy_policy.html" target="_blank">Privacy Policy</a> | 
+            <a href="terms_of_service.html" target="_blank">Terms of Service</a>
+        </p>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        function acceptDisclaimer() {
+            document.getElementById('disclaimerModal').style.display = 'none';
+        }
+
+        function declineDisclaimer() {
+            alert("You must accept the disclaimer to proceed.");
+        }
+    </script>
+</body>
+</html>
