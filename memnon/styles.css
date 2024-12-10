@@ -1,63 +1,130 @@
+/* General Styling */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background-color: #f9f9f9;
-}
-
-header {
-    background-color: #007acc;
-    color: white;
-    padding: 1rem;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: black; /* Black background */
+  color: white; /* White text for high contrast */
 }
 
 h1, h2 {
-    margin: 1rem 0;
+  color: white; /* Ensure headers are readable */
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    margin: 0.5rem 0;
-}
-
-a {
-    text-decoration: none;
-    color: #007acc;
+p, a {
+  color: #cfcfcf; /* Slightly lighter text for accessibility */
 }
 
 a:hover {
-    text-decoration: underline;
+  color: white; /* Highlight links on hover */
 }
 
+button, a {
+  font-family: "Courier New", monospace; /* Maintain button font consistency */
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 20px;
+  border: 3px solid;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:focus, a:focus {
+  outline: 3px dashed #cfcfcf;
+}
+
+/* Button Colors */
+.custom-button.green {
+  background-color: black;
+  color: lime;
+  border-color: lime;
+}
+
+.custom-button.green:hover {
+  background-color: lime;
+  color: black;
+}
+
+.custom-button.blue {
+  background-color: black;
+  color: cyan;
+  border-color: cyan;
+}
+
+.custom-button.blue:hover {
+  background-color: cyan;
+  color: black;
+}
+
+.custom-button.red {
+  background-color: black;
+  color: red;
+  border-color: red;
+}
+
+.custom-button.red:hover {
+  background-color: red;
+  color: black;
+}
+
+.custom-button.yellow {
+  background-color: black;
+  color: yellow;
+  border-color: yellow;
+}
+
+.custom-button.yellow:hover {
+  background-color: yellow;
+  color: black;
+}
+
+.custom-button.gray {
+  background-color: black;
+  color: lightgray;
+  border-color: lightgray;
+}
+
+.custom-button.gray:hover {
+  background-color: lightgray;
+  color: black;
+}
+
+/* Accept Button */
+.custom-button.accept {
+  background-color: black;
+  color: green;
+  border-color: green;
+}
+
+.custom-button.accept:hover {
+  background-color: green;
+  color: black;
+}
+
+/* Button Container */
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+/* Footer Styling */
 footer {
-    margin-top: 2rem;
-    font-size: 0.8rem;
-    color: #666;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #cfcfcf;
 }
 
-#disclaimerModal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    display: none; /* Hidden by default */
+footer a {
+  color: #cfcfcf;
 }
 
-.modal-content {
-    background: white;
-    padding: 2rem;
-    border-radius: 5px;
-    width: 90%;
-    max-width: 500px;
-    text-align: left;
+footer a:hover {
+  color: white;
 }
