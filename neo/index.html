@@ -25,7 +25,7 @@
     <link rel="manifest" href="https://youtubescholar.github.io/taichiman/manifest.json">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="https://youtubescholar.github.io/taichiman/screens9.css">
+    <link rel="stylesheet" href="https://youtubescholar.github.io/splashtest/neo/screens9.css">
 
     <!-- Social Media and Sharing Metadata -->
     <meta property="og:title" content="Taichi For Everyone">
@@ -43,16 +43,15 @@
     <link rel="preconnect" href="https://youtubescholar.github.io">
 
     <!-- Security Headers -->
-<meta http-equiv="Content-Security-Policy" content="
-    default-src 'self'; 
-    script-src 'self' 'nonce-ranndaam24243'; 
-    style-src 'self'; 
-    img-src 'self' https:; 
-    object-src 'none'; 
-    frame-ancestors 'none';
-    base-uri 'self'; 
-    form-action 'self';
-">
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self'; 
+        script-src 'self' 'nonce-uniqueNonce123'; 
+        style-src 'self'; 
+        img-src 'self' https:; 
+        object-src 'none'; 
+        base-uri 'self'; 
+        form-action 'self';
+    ">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="X-Frame-Options" content="DENY">
     <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains">
@@ -85,31 +84,28 @@
 </noscript>
 
 	<script nonce="ranndaam24243">
-    function acceptDisclaimer() {
-        sessionStorage.setItem('disclaimerAccepted', 'true');
-        document.getElementById("disclaimerModal").style.display = "none";
-    }
+        document.getElementById('acceptButton').addEventListener('click', function() {
+            sessionStorage.setItem('disclaimerAccepted', 'true');
+            document.getElementById("disclaimerModal").style.display = "none";
+        });
 
-    function declineDisclaimer() {
-        window.location.href = '/taichiman/declined/';
-    }
+        document.getElementById('declineButton').addEventListener('click', function() {
+            window.location.href = '/taichiman/declined/';
+        });
 </script>
 	
 <body>
     
-<section id="disclaimerModal" role="dialog" aria-labelledby="disclaimerHeading" aria-modal="true">
-    <div class="modal-content" role="document">
-        <h2 id="disclaimerHeading">Disclaimer</h2>
+    <section id="disclaimerModal" role="dialog" aria-labelledby="disclaimerHeading" aria-modal="true">
+        <div class="modal-content" role="document">
+            <h2 id="disclaimerHeading">Disclaimer</h2>
         <p>Please read our disclaimer carefully before continuing to our website.</p>
             <p id="disclaimerContent">We're independent locally based health promotion enthusiasts with a martial art background. I, the admin, and everybody affliated with all this content are not experts in the topics discussed on this site. Any advice or information provided here should not be taken as professional or expert advice. It is shared from a personal perspective and could be incorrect or inappropriate for your specific circumstances. If you are in need of expert advice, we all strongly encourage you to seek guidance from qualified professionals in the respective field. By using this site, you agree with our <a href="/taichiman/terms_of_service" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">terms of service</a> and <a href="/taichiman/privacy_policy" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">privacy statement</a>.</p>
-        <div class="modal-footer">
-            <button id="acceptButton">Accept Disclaimer</button>
-            <button id="declineButton" style="background-color: #f44336;">Decline Disclaimer</button>
+            <div class="modal-footer">
+                <button id="acceptButton" class="button-accept">Accept Disclaimer</button>
+                <button id="declineButton" class="button-decline">Decline Disclaimer</button>
+            </div>
         </div>
-    </div>
-</section>
-       
-
     </section>
 
     
