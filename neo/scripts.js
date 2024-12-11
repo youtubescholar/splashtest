@@ -1,11 +1,8 @@
-function acceptDisclaimer() {
-    // Set a cookie/sessionStorage item
-    sessionStorage.setItem('disclaimerAccepted', 'true');
-    // Hide the disclaimer modal
-    document.getElementById("disclaimerModal").style.display = "none";
-}
+document.getElementById('acceptButton').addEventListener('click', function () {
+    document.cookie = "disclaimerAccepted=true; path=/; max-age=86400"; // Set cookie
+    document.getElementById("disclaimerModal").style.display = "none"; // Hide modal
+});
 
-function declineDisclaimer() {
-    // Handle the decline action, such as redirecting to a different page
+document.getElementById('declineButton').addEventListener('click', function () {
     window.location.href = '/taichiman/declined/';
-}
+});
