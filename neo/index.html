@@ -83,15 +83,25 @@
     <p>Please enable JavaScript to proceed. If you cannot enable JavaScript, refer to the .txt file for this splashpage: <a href="welcome.txt">Plain Text Version of This Page (no links)</a></p>
 </noscript>
 
-	<script nonce="ranndaam24243">
-        document.getElementById('acceptButton').addEventListener('click', function() {
-            sessionStorage.setItem('disclaimerAccepted', 'true');
-            document.getElementById("disclaimerModal").style.display = "none";
-        });
+<script nonce="ranndaam24243">
+    document.addEventListener('DOMContentLoaded', function() {
+        const acceptButton = document.getElementById('acceptButton');
+        const declineButton = document.getElementById('declineButton');
+        const disclaimerModal = document.getElementById('disclaimerModal');
 
-        document.getElementById('declineButton').addEventListener('click', function() {
-            window.location.href = '/taichiman/declined/';
-        });
+        if (acceptButton) {
+            acceptButton.addEventListener('click', function() {
+                sessionStorage.setItem('disclaimerAccepted', 'true');
+                disclaimerModal.style.display = "none";
+            });
+        }
+
+        if (declineButton) {
+            declineButton.addEventListener('click', function() {
+                window.location.href = '/taichiman/declined/';
+            });
+        }
+    });
 </script>
 	
 <body>
