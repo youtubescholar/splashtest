@@ -24,6 +24,11 @@ in the respective field. By using this site, you agree with our terms of service
 
 -------------------------------------------------------------------------------
 
+Instructions:
+To access a link, please copy the URL and paste it into your browser’s address bar.
+
+Thank you for visiting!
+
 CHOOSE THE BEST OPTION FOR YOUR SYSTEM
 
 - Modern Site with Javascript
