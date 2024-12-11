@@ -15,12 +15,22 @@
     <meta name="format-detection" content="telephone=no">
     <link rel="canonical" href="https://youtubescholar.github.io/taichiman/">
     
-    <!-- Favicon -->
-    <link rel="icon" href="https://youtubescholar.github.io/taichiman/images10/blem/favicon.ico" type="image/x-icon">
-    <link rel="icon" type="image/png" sizes="192x192" href="https://youtubescholar.github.io/taichiman/images10/blem/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://youtubescholar.github.io/taichiman/images10/blem/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://youtubescholar.github.io/taichiman/images10/blem/favicon-16x16.png">
-
+    <!-- Favicon Links -->
+    <link rel="icon" href="/taichiman/images10/blem/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="/taichiman/images10/blem/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/taichiman/images10/blem/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/taichiman/images10/blem/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/taichiman/images10/blem/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/taichiman/images10/blem/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/taichiman/images10/blem/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/taichiman/images10/blem/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/taichiman/images10/blem/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/taichiman/images10/blem/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/taichiman/images10/blem/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/taichiman/images10/blem/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/taichiman/images10/blem/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/taichiman/images10/blem/favicon-16x16.png">
+	
     <!-- Web App Manifest -->
     <link rel="manifest" href="https://youtubescholar.github.io/taichiman/manifest.json">
 
@@ -45,7 +55,7 @@
     <!-- Security Headers -->
     <meta http-equiv="Content-Security-Policy" content="
         default-src 'self'; 
-        script-src 'self' 'nonce-ranndaam24243'; 
+        script-src 'self'; 
         style-src 'self'; 
         img-src 'self' https:; 
         object-src 'none'; 
@@ -76,53 +86,10 @@
     }
     </script>
 
-	    <script nonce="randomNonce123">
-        document.addEventListener('DOMContentLoaded', function () {
-            const acceptButton = document.querySelector('.accept-button');
-            const declineButton = document.querySelector('.decline-button');
-            const disclaimerModal = document.getElementById('disclaimerModal');
-
-            acceptButton.addEventListener('click', () => {
-                sessionStorage.setItem('disclaimerAccepted', 'true');
-                disclaimerModal.style.display = 'none';
-            });
-
-            declineButton.addEventListener('click', () => {
-                window.location.href = '/taichiman/declined/';
-            });
-        });
-    </script>
-
 </head>
-
-<noscript>
-    <p>Please enable JavaScript to proceed. If you cannot enable JavaScript, refer to the .txt file for this splashpage: <a href="welcome.txt">Plain Text Version of This Page (no links)</a></p>
-</noscript>
-
 	
 <body>
     
-    <section id="disclaimerModal" role="dialog" aria-labelledby="disclaimerHeading" aria-modal="true">
-        <div class="modal-content" role="document">
-            <h2 id="disclaimerHeading">Disclaimer</h2>
-            <p>Please read our disclaimer carefully before continuing to our website.</p>
-            <p>By using this site, you agree with our 
-                <a href="/taichiman/terms_of_service" class="underline" target="_blank" rel="noopener noreferrer">
-                    terms of service
-                </a> 
-                and 
-                <a href="/taichiman/privacy_policy" class="underline" target="_blank" rel="noopener noreferrer">
-                    privacy statement
-                </a>.
-            </p>
-            <div class="modal-footer">
-                <button class="accept-button" aria-label="Accept Disclaimer">Accept</button>
-                <button class="decline-button" aria-label="Decline Disclaimer">Decline</button>
-            </div>
-        </div>
-    </section>
-    </section>
-
     
     <header>
         <h1 class="header-text">Welcome to Tai Chi Range: A Tai Chi Chuan Resource</h1>
@@ -135,6 +102,20 @@
             <div class="image-container">
                 <img class="responsive-image" src="/taichiman/images10/shades01.png" alt="Tiger with Sunglasses">
             </div>
+
+
+		        <section id="disclaimer" role="region" aria-labelledby="disclaimerHeading">
+            <h2 id="disclaimerHeading">Disclaimer</h2>
+            <p>
+                We're independent locally based health promotion enthusiasts with a martial art background. I, the admin, and everybody affiliated with all this content are not experts in the topics discussed on this site. Any advice or information provided here should not be taken as professional or expert advice. It is shared from a personal perspective and could be incorrect or inappropriate for your specific circumstances.
+            </p>
+            <p>
+                If you are in need of expert advice, we strongly encourage you to seek guidance from qualified professionals in the respective field. By using this site, you agree with our 
+                <a href="/taichiman/terms_of_service" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">terms of service</a> and 
+                <a href="/taichiman/privacy_policy" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">privacy statement</a>.
+            </p>
+        </section>
+		
 
 		<h2>Choose the Best Option for Your System</h2>
             <div class="button-container">
