@@ -45,7 +45,7 @@
     <!-- Security Headers -->
 <meta http-equiv="Content-Security-Policy" content="
     default-src 'self'; 
-    script-src 'self' https://youtubescholar.github.io https://taichi800.github.io; 
+    script-src 'self' 'nonce-ranndaam24243'; 
     style-src 'self'; 
     img-src 'self' https:; 
     object-src 'none'; 
@@ -77,14 +77,23 @@
     }
     </script>
 
-    <!-- External JavaScript -->
-    <script src="https://youtubescholar.github.io/taichiman/scripts.js" defer></script>
+
 </head>
 
 <noscript>
     <p>Please enable JavaScript to proceed. If you cannot enable JavaScript, refer to the .txt file for this splashpage: <a href="welcome.txt">Plain Text Version of This Page (no links)</a></p>
 </noscript>
-	
+
+	<script nonce="ranndaam24243">
+    function acceptDisclaimer() {
+        sessionStorage.setItem('disclaimerAccepted', 'true');
+        document.getElementById("disclaimerModal").style.display = "none";
+    }
+
+    function declineDisclaimer() {
+        window.location.href = '/taichiman/declined/';
+    }
+</script>
 	
 <body>
     
